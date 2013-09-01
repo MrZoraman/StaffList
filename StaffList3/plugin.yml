@@ -1,0 +1,40 @@
+name: StaffList
+version: 3.0.6
+description: Prints a list of the online staff members
+author: MrZoraman
+main: com.mrz.dyndns.server.StaffList3.StaffList3
+prefix: StaffList
+softdepend: [Vault, DisguiseCraft, VanishNoPacket]
+commands:
+  stafflist:
+    description: Displays the staff list
+    usage: /<command>
+    aliases: [who, staff]
+permissions:
+  stafflist.view:
+    description: Allows one to view the staff list
+    default: op
+  stafflist.togglehide:
+    description: Allows one to toggle if they are hidden or not
+    default: op
+  stafflist.reload:
+    descrption: Allows one to reload the config.yml
+    default: op
+  stafflist.status:
+    description: Allows one to see their status of being hidden or not from the staff list
+    default: op
+  stafflist.show:
+    description: Players with this node will show up on the staff list
+    default: op
+  stafflist.*:
+    children:
+      stafflist.view: true
+      stafflist.togglehide: true
+      stafflist.reload: true
+      stafflist.status: true
+      stafflist.show: true
+  stafflist.staff:
+    children:
+      stafflist.view: true
+      stafflist.status: true
+      stafflist.show: true

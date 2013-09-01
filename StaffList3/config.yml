@@ -1,0 +1,4 @@
+putBracketsAroundPrefix: true
+displayAmountOfPlayers: true
+hideDisguisedPlayers: true
+hideOps: false
