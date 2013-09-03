@@ -16,7 +16,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class CommandSystem implements CommandExecutor
 {
-	//TODO: test and shit and yeah
+	//TODO: howboutnow
 	public CommandSystem(JavaPlugin plugin) {
 		commandMap = new HashMap<String, SimpleCommand>();
 		registeredCommandStrings = new HashSet<String>();
